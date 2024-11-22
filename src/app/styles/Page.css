@@ -1,0 +1,129 @@
+html, body {
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 400px;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 200px auto;
+    padding: 70px 20px 30px 20px;
+}
+
+.image-container {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rebeccapurple;
+    width: 100px;
+    height: 100px;
+}
+
+.image {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #0D8112;
+    margin-bottom: 4px;
+}
+
+.message {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.408px;
+    color: #585858;
+    margin-bottom: 8px;
+}
+
+.total-price {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #585858;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    padding: 6px 20px;
+    margin: 0 12px;
+    flex: 1 1 50%;
+}
+
+.primary-btn {
+    background: #0D8112;
+    color: #FFFFFF;
+}
+
+.secondary-btn {
+    border: 1px solid #0D8112;
+    color: #0D8112;
+}
+
+.free-gift {
+    display: none;
+    background: #FFB8EF;
+    border: 1px solid #E7AADA;
+    transform: rotate(8.61deg);
+    box-sizing: border-box;
+}
+
+.free-gift-text {
+    display: none;
+
+    position: absolute;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #773E75;
+    transform: rotate(7.96deg);
+}
+
+@media (min-width: 768px) {
+    .container {
+        /*position: relative;
+        width: 624px;
+        height: 240px;*/
+    }
+}
