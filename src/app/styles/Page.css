@@ -10,16 +10,23 @@ html, body {
 }
 
 .container {
+    max-width: 400px;
+    margin: 200px auto;
+    position: relative;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 400px;
-    background: #FFFFFF;
     border: 1px solid #C6C6C6;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 200px auto;
     padding: 70px 20px 30px 20px;
+}
+
+.body {
+    margin-bottom: 20px;
 }
 
 .image-container {
@@ -31,11 +38,13 @@ html, body {
     background: rebeccapurple;
     width: 100px;
     height: 100px;
+    z-index: 10;
 }
 
 .image {
     border-radius: 50%;
     position: absolute;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -84,7 +93,7 @@ html, body {
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.408px;
-    padding: 6px 20px;
+    padding: 6px 10px;
     margin: 0 12px;
     flex: 1 1 50%;
 }
@@ -121,9 +130,37 @@ html, body {
 }
 
 @media (min-width: 768px) {
+    .card {
+        justify-content: center;
+        padding: 40px 30px;
+    }
+
     .container {
-        /*position: relative;
-        width: 624px;
-        height: 240px;*/
+        display: flex;
+        max-width: 900px;
+        margin: 200px auto 0 auto;
+    }
+
+    .image-container {
+        position: relative;
+        height: 100%;
+        left: unset;
+        top: unset;
+        transform: unset;
+        min-height: 100%;
+        width: auto;
+        max-width: 30%;
+    }
+
+    .image {
+        position: relative;
+        border-radius: 0;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+
+    .body {
+        text-align: left;
     }
 }

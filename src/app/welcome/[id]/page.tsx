@@ -39,26 +39,28 @@ export default function Welcome() {
                     <div className="image-container">
                         <img src="/my-cats.jpeg" alt="" className="image"/>
                     </div>
-                    <div className="content">
-                        <h1 className="title">{userContent.title}</h1>
-                        <p className="message">{userContent.message}</p>
-                        <p className="total-price">Total price: {formatCurrency(userContent.totalPrice)}</p>
-                    </div>
-                    <div className="buttons">
-                        <button className="btn primary-btn">SEE DETAILS</button>
-                        <button className="btn secondary-btn">EDIT DELIVERY</button>
-                    </div>
-
-
-                    {userContent.freeGift && (
-                        <div className="free-gift">
-                            <p className="free-gift-text">FREE GIFT</p>
+                    <div className="card">
+                        <div className="body">
+                            <h1 className="title">{userContent.title}</h1>
+                            <p className="message">{userContent.message}</p>
+                            <p className="total-price">Total price: {formatCurrency(userContent.totalPrice)}</p>
                         </div>
-                    )}
+                        <div className="buttons">
+                            <button className="btn primary-btn">SEE DETAILS</button>
+                            <button className="btn secondary-btn">EDIT DELIVERY</button>
+                        </div>
+
+
+                        {userContent.freeGift && (
+                            <div className="free-gift">
+                                <p className="free-gift-text">FREE GIFT</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
             )}
         </>
-        );
-    }
+    );
+}
 
 
