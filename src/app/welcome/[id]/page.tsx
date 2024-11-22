@@ -52,9 +52,7 @@ export default function Welcome() {
 
 
                         {userContent.freeGift && (
-                            <div className="free-gift">
-                                <p className="free-gift-text">FREE GIFT</p>
-                            </div>
+                            <div className="free-gift">FREE GIFT</div>
                         )}
                     </div>
                 </div>

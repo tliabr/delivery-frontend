@@ -109,16 +109,6 @@ html, body {
 }
 
 .free-gift {
-    display: none;
-    background: #FFB8EF;
-    border: 1px solid #E7AADA;
-    transform: rotate(8.61deg);
-    box-sizing: border-box;
-}
-
-.free-gift-text {
-    display: none;
-
     position: absolute;
     font-weight: 700;
     font-size: 13px;
@@ -126,7 +116,13 @@ html, body {
     text-align: center;
     letter-spacing: -0.408px;
     color: #773E75;
-    transform: rotate(7.96deg);
+    bottom: -10px;
+    left: 50%;
+    max-width: 120px;
+    transform: rotate(-5.2deg) translateX(-50%);
+    background: #FFB8EF;
+    box-sizing: border-box;
+    padding: 4px 24px;
 }
 
 @media (min-width: 768px) {
@@ -162,5 +158,13 @@ html, body {
 
     .body {
         text-align: left;
+    }
+
+    .free-gift {
+        bottom: unset;
+        top: 0;
+        right: 0;
+        left: unset;
+        transform: rotate(7deg) translate(10%, -50%);
     }
 }
